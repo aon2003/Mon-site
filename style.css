@@ -1,0 +1,178 @@
+/* ------ La feuille de style permet de dÃ©finir la "mise en page" de notre site ------  */
+
+/* Nous importons 2 polices depuis google font : Raleway et Caveat */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+html {
+    height: 100%; /* Nous dÃ©finissons la taille du bloc de la balise <html> (tout le site) Ã  100% */
+}
+
+body { /* Nous dÃ©finissons les marges du bloc <body> (contenu de la page) Ã  0px */
+    margin:0; 
+    padding:0;
+}
+
+h1, h2 { /* Nous dÃ©finissons les marges des titres <h1> et <h2> Ã  0px */
+    margin:0;
+    padding:0;
+    font-weight: 200; /* DÃ©finition de la graisse de la police Ã  200 */
+}
+
+h1 {
+    font-size: 65px; /* DÃ©finition de la taille de la police Ã  65 px */
+}
+
+h2 {
+    font-size: 30px; /* DÃ©finition de la taille de la police Ã  30 px */
+}
+
+h3 {
+    font-weight: 700; /* DÃ©finition de la graisse de la police Ã  700 */
+    font-size: 25px; /* DÃ©finition de la taille de la police Ã  25 px */
+
+}
+
+nav a{
+    text-decoration: none; /* Permet de dÃ©sactiver le soulignement du lien */
+    color: white; /* DÃ©fini la couleur du texte en blanc */
+    padding: 10px 10px; /* DÃ©fini la taille du contour (ici 10 px X 10 px), cela nous permet d'afficher le vert autour du texte */
+    font-family: 'Raleway', sans-serif; /* DÃ©fini la police du texte importÃ©e en dÃ©but de fichier CSS */
+    font-size: 17px; /* DÃ©fini taille de la police */
+}
+
+nav {
+    padding-top: 20px; /* DÃ©finition de la graisse de la police Ã  200 */
+    text-align: center; /* Permet de centrer le texte */
+}
+
+nav  a:hover{ /* Lorsque que l'on passe la souris sur le menu */
+    background: #08ffc8; /* DÃ©fini la couleur de fond */
+    color: black; /* DÃ©fini la couleur en noir*/
+}
+  
+.page {
+    font-family: 'Raleway', sans-serif; /* DÃ©fini la police gÃ©nÃ©rale de la classe "page" */
+    background-color: #121516; /* DÃ©fini la couleur de fond */
+    font-size: 20px; /* DÃ©fini la taille du texte */
+}
+
+.partie1 {
+    background-image: url("ar.jpg"); /* Met une image en arrière-plan */ 
+    background-size: cover; /* Redimensionne l'image pour couvrir la taille de la partie */
+    height: 50em; /* Définit la taille de la partie */ 
+    color: white; /* Définir la couleur de la police */ 
+    text-align: center; /* Permet d'aligner le texte au centre */ 
+    text-shadow: black 0.4em 0.4em 0.8em; /* Permet de faire un effet au texte : ombre portée */ 
+}
+
+
+.entete {
+    background-image: url("ar.jpg"); /* Met une image en arriÃ¨re plan */ 
+    height: 15em;  /* DÃ©fini la taille de la partie */ 
+    color: white; /* DÃ©finir la couleur de la police */ 
+    text-align: center; /* Permet d'aligner le texte au centre */ 
+    text-shadow: black 0.4em 0.4em 0.8em; /* Permet de faire un effet au texte : ombre portÃ©e */ 
+}
+
+.profil {
+    width : 150px; /* DÃ©fini la taille de l'image */ 
+    border-radius: 50px; /* DÃ©finir l'arrondi de l'image */ 
+}
+
+.infos {
+    padding: 200px;  /* DÃ©finir une marge (en bas) de 200px */ 
+}
+
+.titre {
+    margin-top: 60px;  /* DÃ©finir une marge (en bas) de 60px */ 
+}
+
+.partie2 {
+    margin-left: 10%;  /* Permet de dÃ©finir la marge de gauche Ã  10% */ 
+    margin-right: 10%;  /* Permet de dÃ©finir la marge de droite Ã  10% */ 
+    color: white;  /* Permet la couleur du texte en blanc */ 
+    text-align: justify; /* Permet d'aligner le texte au centre */ 
+    margin-top:60px;
+}
+
+
+.video {
+    width: 700px; /* DÃ©fini la taille de la vidÃ©o */ 
+    text-align: center; /* Permet d'aligner le texte au centre */ 
+    margin: 0 auto; /* Permet d'aligner la vidÃ©o au centre */ 
+    border-radius: 10px;  /* DÃ©finir l'arrondi de la vidÃ©o */ 
+}
+
+.interessed {
+    margin: 50px; /* Permet de mettre une marge de 50px */ 
+    font-weight: 200; /* Permet de mettre la graisse Ã  200 */  
+    font-size: 45px; /* Permet dÃ©finir la taille du texte Ã  45px */ 
+    text-align: center; /* Permet d'aligner le texte au centre */ 
+    color: white; /* DÃ©fini la couleur du texte en blanc*/ 
+    text-decoration:none; /* Permet de ne pas souligner le titre */ 
+    transition: transform .1s; /* Permet de faire une transition au passage de la souris */ 
+    text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.8em; /* Permet mettre une ombre portÃ©e */ 
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1); /* Permet de dÃ©finir l'agrandissement au passage de la souris */ 
+    -webkit-transform: scale(1.1);  /* Permet de dÃ©finir l'agrandissement au passage de la souris */ 
+    transform: scale(1.1); /* Permet de dÃ©finir l'agrandissement au passage de la souris */ 
+} 
+
+.footer {
+    text-align: center; /* Permet d'aligner le texte au centre */
+    padding-bottom: 30px; /* Permet de mettre une marge en bas */
+    color: aliceblue;
+}
+
+
+
+.annotations {
+    font-family: 'Caveat', cursive; /* de dÃ©finir la police du text */ 
+    text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.8em; /* Permet d'appliquer un effet d'ombre portÃ©e */ 
+    right:40%; /* Permet de dÃ©finir la position du texte */  
+    margin-left: 80%; /* Permet de dÃ©finir une marge de 80% Ã  gauche */  
+}
+
+.rotation { 
+    transform:rotate(-12deg); /* Permet d'Ã©ffectuer une rotation */ 
+    margin-top: -20px; /* Permet de mettre une marge en haut */ 
+}
+
+
+.textetimage {
+    float: left; /*  Placer  sur le cÃ´tÃ© droit l'impage */ 
+    margin: 0 60px 50px 0; /* Permet de mettre des marges */ 
+}
+
+.experiance {
+    margin-bottom: 30px; /* Permet de mettre une marge en bas */ 
+}
+
+.imageinteractive {
+    height: 600px; /* Permet dÃ©finir la taille */ 
+}
+
+.partie1 h1 {
+    font-size: 70px;
+    margin-bottom: 35px; /* Ajoutez de l'espace en bas du titre h1 */
+    padding-top: 30px;
+}
+
+.partie1 h2 {
+    font-size: 30px;
+    margin-top: 40px; /* Ajoutez de l'espace en haut du titre h2 */
+}
+
+/* Ajoutez une classe pour centrer l'image horizontalement */
+.centered-image {
+    display: block;
+    margin: 0 auto; /* Cela centrer l'image horizontalement */
+}
+/* Ajoutez ceci à votre fichier CSS */
+.partie3 h1 {
+    margin-top: 20px; /* Vous pouvez ajuster la valeur en pixels selon vos préférences */
+}
+
